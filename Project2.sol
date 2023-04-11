@@ -19,6 +19,6 @@ contract ErrorHandling{
 
     function assertFunc(uint _a) public{
         a=_a;
-        assert(a==5);
+        assert(_a>=5);
     }
 }
