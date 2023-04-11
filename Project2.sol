@@ -7,13 +7,13 @@ contract ErrorHandling{
 
     function requireFunc(uint _a) public {
         a=_a;
-        require(_a>=10, "Your value is not greater than 0");
+        require(_a>=10, "Your value is not greater than 10");
     }
 
     function revertFunc(uint _a) public{
         a=_a;
         if(_a<=10){
-            revert("Your value is less than 0");
+            revert("Your value is less than 10");
         }
     } 
 
